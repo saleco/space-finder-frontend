@@ -5,15 +5,15 @@ interface SpaceComponentProps {
     spaceId: string,
     name: string,
     location: string,
-    photoUrl?: string,
+    photoURL?: string,
     reserveSpace: (spaceId: string) => void
 } 
 
 export class SpaceComponent extends Component<SpaceComponentProps> {
 
     private renderImage() {
-        if (this.props.photoUrl) {
-            return <img src={this.props.photoUrl} alt=''/>
+        if (this.props.photoURL) {
+            return <img src={this.props.photoURL} alt=''/>
         } else {
             return <img src='https://st4.depositphotos.com/17828278/24401/v/600/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg' alt=''/>
         }
